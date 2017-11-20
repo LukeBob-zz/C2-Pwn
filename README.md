@@ -10,7 +10,9 @@ Designed to run with Kali Linux
 
 ***Net Bus 16.0***
 (1) DarkComet <--> DarkComet Server Remote File Download <--> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
+
 (2) Gh0stRat  <-->      Gh0st buffer Overflow            <---> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
+
 (3) NetBus    <-->       Netbus Auth Bypass              <---> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
 
 ***NO RATS INCLUDED!!!***
