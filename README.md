@@ -6,7 +6,7 @@ Designed to run with Kali Linux
 # Rats
 *Dark Comet
 Gh0st Rat
-Net Bus 16.0*
+Net Bus 16.0
 
 ***NO RATS INCLUDED!!!***
 
