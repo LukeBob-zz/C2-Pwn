@@ -1,7 +1,7 @@
 # C2-Pwn
 Uses Shodan API to pull down C2 servers to run known exploits on them.
 Requires shodan account for API. https://www.shodan.io/
-
+Designed to run with Kali Linux 
 # First install python3 pip and dependency's
 
     apt-get install pyhton3-pip git nmap
@@ -13,3 +13,6 @@ Requires shodan account for API. https://www.shodan.io/
     python3 C2-Pwn.py --key <Shodan API-Key>
 
 
+# License
+
+**Copyright (c) 2017 LukeBob (MIT)**
