@@ -1,6 +1,6 @@
 ## Author: LukeBob
 ## Automate Pwning C2 "Command and Controll" Servers Using Vulnerable Rats
-## Carefull As You Could Possibly Attack An Expeirenced OP And Get Flushed
+## Carefull As You Could Possibly Attack An Expeirenced OP And Get Attacked Back
 ## C2 pwn
 
 import os
