@@ -4,17 +4,12 @@ Requires shodan account for API. https://www.shodan.io/
 Designed to run with Kali Linux 
 
 # Rats Support
-***Dark Comet***
+***Dark Comet*** Remote File Download <-> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
 
-***Gh0st Rat***
+***Gh0st Rat*** Gh0st buffer Overflow <-> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
 
-***Net Bus 16.0***
+***Net Bus 16.0*** Netbus Auth Bypass <-> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
 
-(1) DarkComet <--> DarkComet Server Remote File Download <-> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
-
-(2) Gh0stRat  <-->      Gh0st buffer Overflow            <-> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
-
-(3) NetBus    <-->       Netbus Auth Bypass              <-> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
 
 ***NO RATS INCLUDED!!!***
 
