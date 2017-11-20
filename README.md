@@ -4,9 +4,9 @@ Requires shodan account for API. https://www.shodan.io/
 Designed to run with Kali Linux 
 
 # Rats
-***Dark Comet
-***Gh0st Rat
-***Net Bus 16.0
+*Dark Comet
+Gh0st Rat
+Net Bus 16.0*
 
 ***NO RATS INCLUDED!!!***
 
