@@ -48,7 +48,7 @@ def search(api, term, name):
         print('Error: %s' % e)
         exit(0)
 
-## Create One RTF file For metasploit
+## Create One RC file For metasploit
 def pwn_one(results, name):
     print("""
         [#] Options
