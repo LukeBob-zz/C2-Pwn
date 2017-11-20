@@ -3,12 +3,12 @@ Uses Shodan API to pull down C2 servers to run known exploits on them.
 Requires shodan account for API. https://www.shodan.io/
 Designed to run with Kali Linux 
 
-# Rats Support
-***Dark Comet*** Remote File Download <-> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
+# Rat Exploit Support
+***Dark Comet Remote File Download*** <-> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
 
-***Gh0st Rat*** Gh0st buffer Overflow <-> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
+***Gh0st Rat buffer Overflow*** <-> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
 
-***Net Bus 16.0*** Netbus Auth Bypass <-> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
+***Net Bus 16.0 Auth Bypass*** <-> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
 
 
 ***NO RATS INCLUDED!!!***
