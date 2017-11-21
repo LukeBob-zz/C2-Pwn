@@ -28,7 +28,7 @@ Requires shodan account for API. https://www.shodan.io/
    
   ***Windows***
   
-    C2-Pwn.py --key <Shodan API-Key>
+    C://PATH/TO/PYTHON-3/python3.exe C2-Pwn.py --key <Shodan API-Key>
     
     
 # Example
