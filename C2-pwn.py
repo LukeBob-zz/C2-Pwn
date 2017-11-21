@@ -7,7 +7,6 @@ import shodan
 from time import sleep
 import argparse
 
-
 Nmap_path = ''  ## <--- Only Needed For Windows
 
 ## Writes RC File
@@ -227,4 +226,3 @@ if __name__ == '__main__':
         else:
             parser.print_help()
             quit(0)
-
