@@ -1,7 +1,7 @@
 # C2-Pwn
 Uses Shodan API to pull down C2 servers to run known exploits on them.
 Requires shodan account for API. https://www.shodan.io/
-    (Can be used with Windows and Linux.)
+
 
 # Rat Exploit Support
 ***Dark Comet Remote File Download*** <-> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
