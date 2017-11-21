@@ -1,6 +1,5 @@
 ## Author: LukeBob
 ## Automate Pwning C2 "Command and Controll" Servers Using Vulnerable Versions
-## Carefull As You Could Possibly Attack An Expeirenced OP And Get Attacked Back
 ## C2 pwn
 
 import os
