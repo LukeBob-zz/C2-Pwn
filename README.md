@@ -10,7 +10,7 @@ Requires shodan account for API. https://www.shodan.io/
 
 ***Net Bus 16.0 Auth Bypass*** <-> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
 
-***More Coming Soon***
+***(More Coming Soon)***
 
 ***NO RATS INCLUDED!!!***
 
