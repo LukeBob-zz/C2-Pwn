@@ -22,7 +22,11 @@ Requires shodan account for API. https://www.shodan.io/
     cd C2-Pwn
  
 # Run
+   ***Linux***
     python3 C2-Pwn.py --key <Shodan API-Key>
+   
+    ***Windows***
+    C:\Users\LukeBob\Stuff\C2-Master> C2-Pwn.py --key <Shodan API-Key>
     
     
 # Example
