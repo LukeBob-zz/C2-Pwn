@@ -79,7 +79,7 @@ def search(api, term, name):
         print('Error: %s' % e)
         exit(0)
 
-## Create One RC file For metasploit
+## Parses Choices From User And Sends Them To Rc Class.
 def pwn_one(results, name):
     print("""
         ---------------------------------
