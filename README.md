@@ -26,7 +26,7 @@ Designed to run with Kali Linux
     
 # Example
 
-    root$ python3 C2-pwn.py --key xxxxxxxxxxxxxxxxxxxxx
+    root@myserver~#: python3 C2-pwn.py --key xxxxxxxxxxxxxxxxxxxxxx
 
          ___ ____      ___
         / __\___ \    / _ \_      ___ __
@@ -45,14 +45,14 @@ Designed to run with Kali Linux
 
 
 
-          ------------------------------------------------------------------------------------------------------------------------------
+          -----------------------------------------------------------------------------------------------------------------------------------------------------
           ~                                                               C2 ServerList                                                                       ~
-          ------------------------------------------------------------------------------------------------------------------------------
+          -----------------------------------------------------------------------------------------------------------------------------------------------------
            (1) DarkComet   <-- DarkComet Server Remote File Download Exploit <---> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
            (2) Gh0stRat    <-- Gh0st Client buffer Overflow                  <---> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
            (3) NetBus      <-- Netbus Auth Bypass                            <---> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
            (4) Quit
-          --------------------------------------------------------------------------------------------------------------------------
+          -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
           [*] C2 Server Kind To Exploit (1,2,3,4):
