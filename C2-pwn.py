@@ -136,7 +136,7 @@ def pwn_one(results, name):
                 os.system("service postgresql restart")
             print_output(LPORT)
 
-            sleep(7)
+            sleep(3)
 
         ## Gh0st rc
         if name == 'gh0st':
@@ -144,7 +144,7 @@ def pwn_one(results, name):
             if os.name != 'nt':
                 os.system("service postgresql restart")
             print_output(LPORT)
-            sleep(10)
+            sleep(3)
 
         ## Only nmap module available atm :(
         if name == "NetBus":
