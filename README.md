@@ -1,4 +1,4 @@
-[![Packagist](https://img.shields.io/badge/language-python3.5-brightgreen.svg)]()  [![Packagist](https://img.shields.io/badge/platform-win--64%20%7C%20linux--64%20-lightgrey.svg)]()  [![Packagist](https://img.shields.io/badge/exploit-c2--servers-blue.svg)]()
+[![Packagist](https://img.shields.io/badge/language-python3.5-brightgreen.svg)]()  [![Packagist](https://img.shields.io/badge/platform-win--64%20%7C%20linux--64%20-lightgrey.svg)]()  [![DUB](https://img.shields.io/dub/l/vibe-d.svg)]()
 
 # C2-Pwn
 Uses Shodan API to pull down C2 servers to run known exploits on them.
