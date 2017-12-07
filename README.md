@@ -33,38 +33,7 @@ Requires shodan account for API. https://www.shodan.io/
     
 # Example
 
-    root@myserver~#: python3 C2-pwn.py --key xxxxxxxxxxxxxxxxxxxxxx
-
-         ___ ____      ___
-        / __\___ \    / _ \_      ___ __
-       / /    __) |  / /_)| \ /\ / / '_ '
-      / /___ / __/  / ___/ \ V  V /| | | |
-      \____/|_____| \/      \_/\_/ |_| |_|
-        (V-1.0) Author: LukeBob
-
-
-            ------------------------------
-             Connecting To Shodan API...
-            ------------------------------
-             Created New Api Instance!
-            ------------------------------
-
-
-
-
-          -----------------------------------------------------------------------------------------------------------------------------------------------------
-          ~                                                               C2 ServerList                                                                       ~
-          -----------------------------------------------------------------------------------------------------------------------------------------------------
-           (1) DarkComet   <-- DarkComet Server Remote File Download Exploit <---> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
-           (2) Gh0stRat    <-- Gh0st Client buffer Overflow                  <---> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
-           (3) NetBus      <-- Netbus Auth Bypass                            <---> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
-           (4) Quit
-          -----------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-          [*] C2 Server Kind To Exploit (1,2,3,4):
-
-
+<img src='https://ts3.ezcheats.co.uk/c2-pwn.gif'></img>
 
 # License
 
