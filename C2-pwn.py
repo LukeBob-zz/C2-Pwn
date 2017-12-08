@@ -40,12 +40,12 @@ def print_output(LPORT):
     print(
         """
 ----------------------------------------------------------------------------------
-~                                    RESULT                                     ~
+~                                    {0}                                     ~
 ----------------------------------------------------------------------------------
 ~  Now You Can Launch The Exploit With, msfconsole -r DarkComet_Metasploit.rc   ~
-~        Remember, if you are behind nat, port forward port (%s)                ~
+~        Remember, if you are behind nat, port forward port ({1})               ~
 ----------------------------------------------------------------------------------
-        """%(LPORT))
+        """.format(Color.green("RESULT"),LPORT))
 
 
 # writes rc files
@@ -103,19 +103,16 @@ def search(api, term, name):
 def pwn_one(results, name):
     print("""
 ---------------------------------
-~           %s            ~
+~           {0}            ~
 ---------------------------------
-(1) List Available %s Targets
-(2) Quit
+({2}) {4} {1} {5}
+({3}) {6}
 ---------------------------------
-    """%(Color.blue("Options"), name))
-    sing_choice = input('[*] Option (1,2): ')
+    """.format(Color.blue("Options"), Color.blue(name),Color.blue("1"), Color.blue("2"),Color.yellow("List available"),Color.yellow("targets"),Color.red("Quit")))
+    sing_choice = input('Option (1,2): ')
     if sing_choice == '1':
         print('\n\n----------------------------\n %s C2 Server List\n----------------------------\n\n'%(name))
         for i in results['matches']:
-            p_ip = Color.yellow("[IP]: ")
-            p_port = Color.blue("[Port]: ")
-
             print("[IP]: {0}\t[PORT]: {1}".format(i['ip_str'], i['port']))
         print("\n")
 
@@ -167,7 +164,7 @@ def pwn_one(results, name):
 
     ## Quit
     elif sing_choice == '2':
-        print(Color.green("\n\n[#]")+"Shutting Down..\n")
+        print(Color.green("\nShutting Down..\n"))
         quit(0)
 
 
@@ -181,15 +178,15 @@ def main(key):
     while not quit:
         print("""
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-~                                                               C2 ServerList                                                                       ~
+~                                                               {0}                                                                       ~
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-(1) DarkComet   <-- DarkComet Server Remote File Download Exploit <---> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
-(2) Gh0stRat    <-- Gh0st Client buffer Overflow                  <---> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
-(3) NetBus      <-- Netbus Auth Bypass                            <---> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
-(4) Quit
+({1}) {5}   <-- DarkComet Server Remote File Download Exploit <---> https://www.rapid7.com/db/modules/auxiliary/gather/darkcomet_filedownloader
+({2}) {6}    <-- Gh0st Client buffer Overflow                  <---> https://www.rapid7.com/db/modules/exploit/windows/misc/gh0st
+({3}) {7}      <-- Netbus Auth Bypass                            <---> https://nmap.org/nsedoc/scripts/netbus-auth-bypass.html
+({4}) {8}
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-        """)
-        number = input("\n[*] C2 Server Kind To Exploit (1,2,3,4): ")
+        """.format(Color.blue("C2 Server List"),Color.blue("1"),Color.blue("2"),Color.blue("3"),Color.blue("4"), Color.yellow("DarkComet"),Color.yellow("GhostRat"),Color.yellow("NetBus"), Color.red("Quit")))
+        number = input(Color.blue("\nC2 Server Kind To Exploit (1,2,3,4): "))
         print("\n\n")
 
         ## Search Shodan For DarkComet C2 Servers
@@ -221,9 +218,13 @@ if __name__ == '__main__':
         parser = argparse.ArgumentParser(description='C2 Pwn')
         parser.add_argument('--key', help='Shodan Api Key')
         args = parser.parse_args()
-        if args.key:
-            key = args.key
-            main(key)
-        else:
-            parser.print_help()
-            quit(0)
+        try:
+            if args.key:
+                key = args.key
+                main(key)
+            else:
+                parser.print_help()
+                quit(0)
+        except KeyboardInterrupt:
+            print(Color.green("\nShutting down...\n"))
+            exit(0)
