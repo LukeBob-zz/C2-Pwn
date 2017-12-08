@@ -87,7 +87,7 @@ def get_api(api_key):
         print(Color.green('Created New Api Instance!')+'\n---------------------------------\n\n\n')
         return(api)
     except shodan.exception.APIError as e:
-        print(Color.red('[#] Error:')+' %s\n---------------------------------\n\n' % e)
+        print(Color.red('Error:')+' %s\n---------------------------------\n\n' % e)
         exit(0)
 
 ## Gets Back Results in Dictionary Format
