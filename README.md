@@ -16,14 +16,13 @@ Requires shodan account for API. https://www.shodan.io/
 
 ***NO RATS INCLUDED!!!***
 
-# First install python3 pip and dependency's
+# First download and run setup.sh
 
-    apt-get install pyhton3-pip git nmap
-    pip3 install shodan
     git clone https://github.com/LukeBob/C2-Pwn.git
     cd C2-Pwn
+    bash setup.sh
  
-# Run
+# To Run
   ***Linux***
    
     python3 C2-Pwn.py --key <Shodan API-Key>
