@@ -7,6 +7,9 @@ import shodan
 from time import sleep
 import argparse
 
+if os.name != 'nt':
+    import readline
+
 Nmap_path = ''  ## <--- Only Needed For Windows
 
 
@@ -109,7 +112,7 @@ def pwn_one(results, name):
 ({3}) {6}
 ---------------------------------
     """.format(Color.blue("Options"), Color.blue(name),Color.blue("1"), Color.blue("2"),Color.yellow("List available"),Color.yellow("targets"),Color.red("Quit")))
-    sing_choice = input('Option (1,2): ')
+    sing_choice = input(Color.blue('Option (1,2): '))
     if sing_choice == '1':
         print('\n\n----------------------------\n %s C2 Server List\n----------------------------\n\n'%(name))
         for i in results['matches']:
@@ -226,5 +229,6 @@ if __name__ == '__main__':
                 parser.print_help()
                 quit(0)
         except KeyboardInterrupt:
-            print(Color.green("\nShutting down...\n"))
+            print(Color.green("\n\nShutting down...\n"))
             exit(0)
+
