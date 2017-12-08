@@ -2,6 +2,7 @@
 
 apt-get update
 apt-get -y upgrade
+apt-get install -y nmap
 apt-get install python3
 apt-get install python3-pip
 pip3 install shodan
