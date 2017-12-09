@@ -3,8 +3,8 @@
 apt-get update
 apt-get -y upgrade
 apt-get install -y nmap
-apt-get install python3
-apt-get install python3-pip
+apt-get install -y python3
+apt-get install -y python3-pip
 pip3 install shodan
 pip3 install argparse
 
